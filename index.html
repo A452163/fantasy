@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hi</title>
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/b.css">
+        <script src="https://cdn.jsdelivr.net/npm/@dlom/favicon@1.0.6/dist/favicon.min.js"></script>
+        <script>
+          const favicon = new Favicon();
+          favicon.animate([
+              {transform: 'rotate(0deg)'},
+              {transform: 'rotate(360deg)'}
+          ], 1000);
+        </script>
+
+ 
+
+
+
+    </head>
+
+    <body>
+
+      <style>
+        /* 应用到所有的 h4, h2, h3 和 h1 标签内的文本 */
+        #container1 h4, #container1 h2, #container1 h3, #container1 h1,
+        #container2 h4, #container2 h2, #container2 h3, #container2 h1 {
+            user-select: none; /* 不允许文本选择 */
+        }
+    </style>
+    
+    <div class="a" id="container1">
+        <h4 id="a">⟪牢大の小曲⟫</h4>
+        <h2 id="ab">⟪牢大の小曲⟫</h2>
+        <h3 id="abc">⟪牢大の小曲⟫</h3>
+        <h1 id="abcd">⟪牢大の小曲⟫</h1>
+        <h2 id="abcde">⟪牢大の小曲⟫</h2>
+        <h3 id="abcdef">⟪牢大の小曲⟫</h3>
+    </div>
+            
+    <div class="b" id="container2" onclick="showCanvas()">
+        <h4 id="a">⟪The Other Side Of Paradise⟫</h4>
+        <h2 id="ab">⟪The Other Side Of Paradise⟫</h2>
+        <h3 id="abc">⟪The Other Side Of Paradise⟫</h3>
+        <h1 id="abcd">⟪The Other Side Of Paradise⟫</h1>
+        <h2 id="abcde">⟪The Other Side Of Paradise⟫</h2>
+        <h3 id="abcdef">⟪The Other Side Of Paradise⟫</h3>
+    </div>
+
+
+      <script>
+        
+let isCanvasVisible = false;
+
+function showCanvas() {
+  var canvas = document.getElementById('demo2');
+  if (isCanvasVisible) {
+    canvas.style.display = 'none';
+    isCanvasVisible = false;
+  } else {
+    canvas.style.display = 'block';
+    textImage.createTextImage({
+      canvas: canvas,
+      replaceText: '‱',
+      raduis: 6,
+      isGray: false,
+      source: {
+        video: 'The Other Side Of Paradise.mp4',
+        width: 500,
+        height: 300,
+      },
+    });
+    isCanvasVisible = true;
+  }
+}
+
+
+
+      </script>
+
+
+        <canvas id="demo1" style="display: none;"></canvas>
+        <canvas id="demo2" style="display: none;"></canvas>
+
+        <script src="JS/script.js"></script>
+        <script src="JS/PBomb.js"></script>
+        <script src="JS/Mouse.js"></script>
+        
+
+
+
+        <script src="JS\index.min.js"></script>
+
+
+        <script src="JS\cat.js"> </script>
+
+
+
+
+        <script src="./JS/text-image.iife.js"></script>
+        <script src="./JS/text Image.js"></script>
+
+
+
+
+      <div class="x">
+      </div>
+
+
+
+
+
+
+
+
+    </body>
+    
+</html>
